@@ -1,0 +1,106 @@
+================================================================================
+ESP32 ATTENDANCE SYSTEM - RECONNECTION & TROUBLESHOOTING RUNBOOK ("CHEATCODE")
+================================================================================
+
+USE CASE:
+Use this runbook whenever your laptop reboots, sleeps, shuts down, or when 
+"ESP32_Attendance" fails to connect, gets disconnected, or throws "Access is denied"
+/ "Port Not Mounted" errors.
+
+--------------------------------------------------------------------------------
+1. CORE HARDWARE & PORT ASSIGNMENTS
+--------------------------------------------------------------------------------
+- Target Bluetooth Device Name : ESP32_Attendance
+- Device Hardware Bluetooth MAC: B0:3F:D3:70:CD:B6
+- Bluetooth SPP Virtual COM Port: COM15
+- USB Debug / Programming Port : COM13 (Silicon Labs CP210x, 115200 baud)
+- Baud Rate                    : 115200
+- Protocol                     : PING -> PONG over Classic Bluetooth SPP
+
+--------------------------------------------------------------------------------
+2. WHY IT DISCONNECTS & FAILS ON RESTART (ROOT CAUSES)
+--------------------------------------------------------------------------------
+A. Windows Bluetooth Virtual COM Unmount:
+   When Windows restarts or toggles Bluetooth, the virtual serial link (COM15) 
+   unmounts until an active serial handle opens it or Bluetooth is re-triggered.
+
+B. Hidden Port Lock ("Access is denied" / PermissionError 13):
+   If any background tool (PuTTY, Arduino IDE Serial Monitor, or a frozen Python 
+   instance) held or tried to access COM15 or COM13, Windows locks the COM port 
+   exclusively. No other application can connect until that process is killed.
+
+C. FastAPI Backend Not Running:
+   The React frontend proxies requests through Vite (`/api` -> `http://127.0.0.1:8000`).
+   If the Python backend is down, the frontend gives "Unexpected end of JSON input".
+
+--------------------------------------------------------------------------------
+3. STEP-BY-STEP RECONNECTION PROTOCOL (RUN AFTER REBOOT)
+--------------------------------------------------------------------------------
+
+STEP 1: Verify Windows Bluetooth Connection
+  1. Open Windows "Settings" -> "Bluetooth & devices" -> "Devices".
+  2. Make sure Bluetooth is toggled ON.
+  3. Ensure "ESP32_Attendance" appears in the paired devices list.
+  4. (If unlinked) Power-cycle the ESP32 (press the EN button on the NodeMCU board).
+
+STEP 2: Kill Lingering Processes Locking the COM Ports
+  Run this PowerShell command to terminate any apps that hold COM port locks:
+  ```powershell
+  Get-Process -Name "putty", "serial-monitor", "python" -ErrorAction SilentlyContinue | Stop-Process -Force
+  ```
+
+STEP 3: Verify Assigned COM Port Matches ESP32 MAC
+  Run this quick Python script in PowerShell to verify COM15 is mapped to ESP32:
+  ```powershell
+  python -c "import winreg; key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r'SYSTEM\CurrentControlSet\Enum\BTHENUM'); [print(sub2_name, '->', winreg.QueryValueEx(winreg.OpenKey(winreg.OpenKey(key, winreg.EnumKey(key, i)), sub2_name), 'FriendlyName')[0]) for i in range(winreg.QueryInfoKey(key)[0]) for sub2_name in [winreg.EnumKey(winreg.OpenKey(key, winreg.EnumKey(key, i)), j) for j in range(winreg.QueryInfoKey(winreg.OpenKey(key, winreg.EnumKey(key, i)))[0])] if 'b03fd370cdb6' in sub2_name.lower()]"
+  ```
+  Expected output:
+  `8&d8c96f7&0&B03FD370CDB6_C00000000 -> Standard Serial over Bluetooth link (COM15)`
+
+STEP 4: Test Direct Hardware PING -> PONG
+  Run this standalone test to verify the ESP32 is awake and responsive:
+  ```powershell
+  python -c "import serial, time; s = serial.Serial('COM15', 115200, timeout=3, write_timeout=3); time.sleep(0.5); s.reset_input_buffer(); s.reset_output_buffer(); s.write(b'PING\n'); s.flush(); time.sleep(0.5); print('ESP32 RESPONSE:', s.readline().decode('utf-8', errors='ignore').strip()); s.close()"
+  ```
+  Expected output:
+  `ESP32 RESPONSE: PONG`
+
+STEP 5: Launch the Python FastAPI Backend
+  In terminal inside `attendance\backend_python`:
+  ```powershell
+  python -m uvicorn main:app --host 127.0.0.1 --port 8000
+  ```
+
+STEP 6: Launch the React Frontend
+  In terminal inside `attendance\frontend`:
+  ```powershell
+  npm run dev
+  ```
+  Open browser at: http://localhost:5173/
+
+STEP 7: Verify Web UI Status
+  - Check Factor 3 card: Status will show green "CONNECTED".
+  - Click "Test PING Handshake" on the UI to confirm live bi-directional data flow.
+
+--------------------------------------------------------------------------------
+4. CONFIGURATION FILES REFERENCE
+--------------------------------------------------------------------------------
+If port settings ever drift, verify these files are set to COM15:
+1. `backend_python\config.env`:
+   `BLUETOOTH_PORT=COM15`
+   `USB_DEBUG_PORT=COM13`
+   `BAUD_RATE=115200`
+2. `frontend\src\components\BluetoothConnectCard.jsx`:
+   Default fallback: `'COM15'`
+3. `frontend\src\App.jsx`:
+   Default fallback: `'COM15'`
+4. `esp32_firmware_spp.ino`:
+   Configured for `ESP32_Attendance` with Bluetooth Classic Serial.
+
+--------------------------------------------------------------------------------
+5. QUICK AI AGENT RECONNECT PROMPT (COPY-PASTE READY)
+--------------------------------------------------------------------------------
+Copy and paste the prompt below to the AI assistant after any reboot:
+
+"The laptop was restarted and ESP32_Attendance is disconnected. Please run the cheatcode reconnection steps: kill any lingering putty/serial-monitor/python processes locking COM15 or COM13, verify COM15 responds to PING -> PONG, start the FastAPI backend on port 8000 with COM15, ensure the Vite dev server is running on port 5173, and verify the backend /api/bluetooth/status endpoint returns CONNECTED."
+================================================================================

@@ -1,0 +1,2659 @@
+{
+  "students": [
+    {
+      "registration_number": "RA2511026020082",
+      "name": "B.Ganesh",
+      "department": "AIML",
+      "year": "2nd Year",
+      "section": "Sec-B",
+      "enrolled": true,
+      "face_template": "WzAuMCwgMC4wNDY0LCAwLjIxNDgsIDAuMzUxNCwgMC40MTQ5LCAwLjQ5MzEsIDAuNDc2OCwgMC42MjI5LCAwLjYxMDgsIDAuNjk5MywgMC43NDc0LCAwLjczODgsIDEuMCwgMC42ODM4LCAwLjM4NjYsIDAuMjQ5MSwgMC4xNjc1LCAwLjE4NDcsIDAuMTM3NSwgMC4xMzQ5LCAwLjA4MDgsIDAuMDQ5LCAwLjAyNjYsIDAuMDE4LCAwLjAxMiwgMC4wMDk1LCAwLjAxMzcsIDAuMDEyLCAwLjAwMTcsIDAuMCwgMC4wMDI2LCAwLjAwNDNd"
+    },
+    {
+      "registration_number": "RA2511026020083",
+      "name": "Priya Sharma",
+      "department": "Computer Science",
+      "year": "3rd Year",
+      "section": "Sec-A",
+      "enrolled": true,
+      "face_template": null
+    },
+    {
+      "registration_number": "RA2511026020084",
+      "name": "Rahul Verma",
+      "department": "Data Science",
+      "year": "2nd Year",
+      "section": "Sec-C",
+      "enrolled": true,
+      "face_template": null
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "ATT-1792659192-9AE31B",
+      "student_id": "RA25TEST001",
+      "student_name": "Test Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:12",
+      "start_epoch": 1792659192.9374607,
+      "end_time": "2026-10-22 14:23:16",
+      "status": "PRESENT",
+      "consecutive_failures": 3,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:13",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        },
+        {
+          "warning_number": 2,
+          "timestamp": "2026-10-22 14:23:14",
+          "message": "Warning 2: Second consecutive Bluetooth failure. Return to classroom proximity immediately!"
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:12",
+      "last_check_timestamp": 1792659195.9733305,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:12",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:13",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:14",
+          "success": false,
+          "detail": "Check failed (2/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:15",
+          "success": false,
+          "detail": "Check failed (3/3): ESP32 did not respond on COM14."
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792659196-3965C9",
+      "student_id": "RA25TEST002",
+      "student_name": "Recovery Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:16",
+      "start_epoch": 1792659196.5708277,
+      "end_time": "2026-10-22 14:23:19",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:17",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:18",
+      "last_check_timestamp": 1792659198.613797,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:16",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:17",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:18",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 1 misses)"
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792659227-F4085E",
+      "student_id": "RA25TEST001",
+      "student_name": "Test Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:47",
+      "start_epoch": 1792659227.7068956,
+      "end_time": "2026-10-22 14:23:51",
+      "status": "ABSENT",
+      "consecutive_failures": 3,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:48",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        },
+        {
+          "warning_number": 2,
+          "timestamp": "2026-10-22 14:23:49",
+          "message": "Warning 2: Second consecutive Bluetooth failure. Return to classroom proximity immediately!"
+        },
+        {
+          "warning_number": 3,
+          "timestamp": "2026-10-22 14:23:50",
+          "message": "Penalty Applied: 3 consecutive Bluetooth check failures. Marked ABSENT."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:47",
+      "last_check_timestamp": 1792659230.7422674,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:47",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:48",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:49",
+          "success": false,
+          "detail": "Check failed (2/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:50",
+          "success": false,
+          "detail": "Check failed (3/3): ESP32 did not respond on COM14."
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792659231-969937",
+      "student_id": "RA25TEST002",
+      "student_name": "Recovery Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:51",
+      "start_epoch": 1792659231.5338776,
+      "end_time": "2026-10-22 14:23:53",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:52",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:53",
+      "last_check_timestamp": 1792659233.5815887,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:51",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:52",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 1 misses)"
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792729466-AAA5BB",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-23 09:54:26",
+      "start_epoch": 1792729466.616097,
+      "end_time": null,
+      "status": "WARNING",
+      "consecutive_failures": 1,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-23 11:28:45",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-23 11:14:48",
+      "last_check_timestamp": 1792735125.9297175,
+      "check_history": [
+        {
+          "timestamp": "2026-10-23 09:54:26",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-23 09:54:41",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:54:57",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:55:13",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:55:29",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:55:45",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:56:01",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:56:17",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:56:34",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:56:49",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:57:05",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:57:21",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:57:37",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:57:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:58:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:58:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:58:41",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:58:57",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:59:13",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:59:29",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 09:59:45",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:00:01",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:00:17",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:00:33",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:00:49",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:01:05",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:01:21",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:01:37",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:01:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:02:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:02:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:02:41",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:02:57",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:03:14",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:03:29",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:03:45",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:04:01",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:04:17",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:04:33",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:04:49",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:05:05",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:05:21",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:05:37",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:05:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:06:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:06:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:06:41",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:06:58",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:07:15",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:07:31",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:07:47",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:08:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:08:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:08:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:08:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:09:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:09:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:09:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:09:55",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:10:11",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:10:27",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:10:43",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:10:59",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:11:15",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:11:31",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:11:47",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:12:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:12:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:12:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:12:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:13:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:13:34",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:13:49",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:14:05",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:14:21",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:14:37",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:14:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:15:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:15:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:15:42",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:15:59",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:16:15",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:16:31",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:16:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:17:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:17:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:17:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:17:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:18:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:18:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:18:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:18:55",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:19:11",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:19:27",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:19:43",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:19:59",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:20:15",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:20:31",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:20:47",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:21:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:21:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:21:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:21:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:22:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:22:24",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:22:40",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:22:56",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:23:12",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:23:28",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:23:44",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:24:00",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:24:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:24:32",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:24:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:25:04",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:25:20",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:25:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:25:52",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:26:08",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:26:24",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:26:40",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:26:56",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:27:12",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:27:28",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:27:44",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:28:00",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:28:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:28:32",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:28:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:29:04",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:29:20",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:29:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:29:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:30:08",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:30:24",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:30:40",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:30:56",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:31:12",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:31:28",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:31:44",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:32:00",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:32:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:32:32",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:32:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:33:04",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:33:20",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:33:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:33:52",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:34:08",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:34:24",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:34:40",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:34:56",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:35:12",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:35:28",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:35:44",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:36:00",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:36:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:36:32",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:36:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:37:04",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:37:20",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:37:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:37:52",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:38:08",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:38:24",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:38:40",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:38:56",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:39:12",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:39:28",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:39:44",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:40:00",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:40:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:40:32",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:40:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:41:04",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:41:20",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:41:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:41:52",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:42:08",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:42:24",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:50:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 10:59:46",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:00:02",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:00:18",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:00:34",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:00:50",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:01:06",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:01:22",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:01:38",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:01:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:02:10",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:02:26",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:02:42",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:02:58",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:03:14",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:03:30",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:03:46",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:04:02",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:04:18",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:04:34",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:04:50",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:05:06",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:05:22",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:05:38",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:05:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:06:10",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:06:26",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:06:42",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:06:58",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:07:14",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:07:30",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:07:46",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:08:02",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:08:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:08:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:08:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:09:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:09:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:09:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:14:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-23 11:28:45",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792953888-EBAC9B",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 00:14:48",
+      "start_epoch": 1792953888.9254048,
+      "end_time": "2026-10-26 00:16:52",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-26 00:16:39",
+      "last_check_timestamp": 1792953999.8673885,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 00:14:48",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-26 00:15:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:15:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:15:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:15:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:16:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:16:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:16:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792954119-DB82BE",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 00:18:39",
+      "start_epoch": 1792954119.8951366,
+      "end_time": null,
+      "status": "MONITORING",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-26 00:20:48",
+      "last_check_timestamp": 1792954248.3739684,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 00:18:39",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-26 00:18:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:19:11",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:19:26",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:19:42",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:19:59",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:20:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:20:32",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:20:48",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792990132-3D8CBA",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 10:18:52",
+      "start_epoch": 1792990132.2581475,
+      "end_time": "2026-10-26 10:20:40",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-26 10:20:26",
+      "last_check_timestamp": 1792990226.1482625,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 10:18:52",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-26 10:19:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:19:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:19:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:19:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:20:10",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:20:26",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792997701-6EA800",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 12:25:01",
+      "start_epoch": 1792997701.0258904,
+      "end_time": "2026-10-26 12:25:12",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-26 12:25:01",
+      "last_check_timestamp": 1792997701.0258904,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 12:25:01",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1793004838-FD1E52",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 14:23:58",
+      "start_epoch": 1793004838.3042417,
+      "end_time": "2026-10-26 14:24:38",
+      "status": "PRESENT",
+      "consecutive_failures": 1,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-26 14:24:28",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-26 14:24:13",
+      "last_check_timestamp": 1793004868.8951511,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 14:23:58",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-26 14:24:13",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 14:24:28",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM15."
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1793338086-74C074",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-30 10:58:06",
+      "start_epoch": 1793338086.5137691,
+      "end_time": "2026-10-30 11:10:11",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-30 11:10:10",
+      "last_check_timestamp": 1793338810.4804335,
+      "check_history": [
+        {
+          "timestamp": "2026-10-30 10:58:06",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-30 10:58:21",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:58:37",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:58:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:41",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:58",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:00:14",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:00:30",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:00:46",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:55",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:11",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:27",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:43",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:59",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:04:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:04:31",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:04:47",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:40",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:56",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:07:13",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:07:30",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:07:45",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:01",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:18",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:34",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:50",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:06",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:22",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:38",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:10:10",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1793338850-68F208",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-30 11:10:50",
+      "start_epoch": 1793338850.965093,
+      "end_time": "2026-10-30 11:11:09",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-30 11:11:06",
+      "last_check_timestamp": 1793338866.0477765,
+      "check_history": [
+        {
+          "timestamp": "2026-10-30 11:10:50",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-30 11:11:06",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1793339084-6F2082",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-30 11:14:44",
+      "start_epoch": 1793339084.4019823,
+      "end_time": null,
+      "status": "WARNING",
+      "consecutive_failures": 1,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-30 11:16:35",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-30 11:16:19",
+      "last_check_timestamp": 1793339195.3700795,
+      "check_history": [
+        {
+          "timestamp": "2026-10-30 11:14:44",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-30 11:14:59",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:15:15",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:15:31",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:15:47",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:16:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:16:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:16:35",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1793617580-34A10E",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-11-02 16:36:20",
+      "start_epoch": 1793617580.397717,
+      "end_time": "2026-11-02 16:36:20",
+      "status": "OD - PRESENT",
+      "attendance_mode": "OD_EXEMPTION",
+      "od_exempted": true,
+      "od_request_id": 5,
+      "od_details": {
+        "event_name": "National AI Expo Presentation",
+        "reason": null,
+        "faculty_name": null,
+        "periods": "Period 1 - Period 9"
+      },
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-11-02 16:36:20",
+      "last_check_timestamp": 1793617580.397717,
+      "check_history": [
+        {
+          "timestamp": "2026-11-02 16:36:20",
+          "success": true,
+          "detail": "OD Exemption Verified: National AI Expo Presentation. Student excused from Bluetooth absence tracking."
+        }
+      ]
+    }
+  ],
+  "attendance_records": [
+    {
+      "session_id": "ATT-1793617580-34A10E",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-11-02 16:36:20",
+      "start_epoch": 1793617580.397717,
+      "end_time": "2026-11-02 16:36:20",
+      "status": "OD - PRESENT",
+      "attendance_mode": "OD_EXEMPTION",
+      "od_exempted": true,
+      "od_request_id": 5,
+      "od_details": {
+        "event_name": "National AI Expo Presentation",
+        "reason": null,
+        "faculty_name": null,
+        "periods": "Period 1 - Period 9"
+      },
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-11-02 16:36:20",
+      "last_check_timestamp": 1793617580.397717,
+      "check_history": [
+        {
+          "timestamp": "2026-11-02 16:36:20",
+          "success": true,
+          "detail": "OD Exemption Verified: National AI Expo Presentation. Student excused from Bluetooth absence tracking."
+        }
+      ],
+      "completion_reason": "Unit test complete"
+    },
+    {
+      "session_id": "ATT-1793617580-34A10E",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-11-02 16:36:20",
+      "start_epoch": 1793617580.397717,
+      "end_time": null,
+      "status": "OD - PRESENT",
+      "attendance_mode": "OD_EXEMPTION",
+      "od_exempted": true,
+      "od_request_id": 5,
+      "od_details": {
+        "event_name": "National AI Expo Presentation",
+        "reason": null,
+        "faculty_name": null,
+        "periods": "Period 1 - Period 9"
+      },
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-11-02 16:36:20",
+      "last_check_timestamp": 1793617580.397717,
+      "check_history": [
+        {
+          "timestamp": "2026-11-02 16:36:20",
+          "success": true,
+          "detail": "OD Exemption Verified: National AI Expo Presentation. Student excused from Bluetooth absence tracking."
+        }
+      ],
+      "completion_reason": "Approved OD: National AI Expo Presentation"
+    },
+    {
+      "session_id": "ATT-1793338850-68F208",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-30 11:10:50",
+      "start_epoch": 1793338850.965093,
+      "end_time": "2026-10-30 11:11:09",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-30 11:11:06",
+      "last_check_timestamp": 1793338866.0477765,
+      "check_history": [
+        {
+          "timestamp": "2026-10-30 11:10:50",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-30 11:11:06",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        }
+      ],
+      "completion_reason": "Manual end by student/lecturer"
+    },
+    {
+      "session_id": "ATT-1793338086-74C074",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-30 10:58:06",
+      "start_epoch": 1793338086.5137691,
+      "end_time": "2026-10-30 11:10:11",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-30 11:10:10",
+      "last_check_timestamp": 1793338810.4804335,
+      "check_history": [
+        {
+          "timestamp": "2026-10-30 10:58:06",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-30 10:58:21",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:58:37",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:58:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:41",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 10:59:58",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:00:14",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:00:30",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:00:46",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:01:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:02:55",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:11",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:27",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:43",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:03:59",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:04:16",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:04:31",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:04:47",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:36",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:05:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:09",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:25",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:40",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:06:56",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:07:13",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:07:30",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:07:45",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:01",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:18",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:34",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:08:50",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:06",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:22",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:38",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:09:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-30 11:10:10",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 0 misses)"
+        }
+      ],
+      "completion_reason": "Manual end by student/lecturer"
+    },
+    {
+      "session_id": "ATT-1793004838-FD1E52",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 14:23:58",
+      "start_epoch": 1793004838.3042417,
+      "end_time": "2026-10-26 14:24:38",
+      "status": "PRESENT",
+      "consecutive_failures": 1,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-26 14:24:28",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-26 14:24:13",
+      "last_check_timestamp": 1793004868.8951511,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 14:23:58",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-26 14:24:13",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 14:24:28",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM15."
+        }
+      ],
+      "completion_reason": "Manual end by student/lecturer"
+    },
+    {
+      "session_id": "ATT-1792997701-6EA800",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 12:25:01",
+      "start_epoch": 1792997701.0258904,
+      "end_time": "2026-10-26 12:25:12",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-26 12:25:01",
+      "last_check_timestamp": 1792997701.0258904,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 12:25:01",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        }
+      ],
+      "completion_reason": "Manual end by student/lecturer"
+    },
+    {
+      "session_id": "ATT-1792990132-3D8CBA",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 10:18:52",
+      "start_epoch": 1792990132.2581475,
+      "end_time": "2026-10-26 10:20:40",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-26 10:20:26",
+      "last_check_timestamp": 1792990226.1482625,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 10:18:52",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-26 10:19:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:19:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:19:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:19:54",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:20:10",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 10:20:26",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        }
+      ],
+      "completion_reason": "Manual end by student/lecturer"
+    },
+    {
+      "session_id": "ATT-1792953888-EBAC9B",
+      "student_id": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "start_time": "2026-10-26 00:14:48",
+      "start_epoch": 1792953888.9254048,
+      "end_time": "2026-10-26 00:16:52",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [],
+      "last_successful_heartbeat": "2026-10-26 00:16:39",
+      "last_check_timestamp": 1792953999.8673885,
+      "check_history": [
+        {
+          "timestamp": "2026-10-26 00:14:48",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-26 00:15:03",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:15:19",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:15:35",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:15:51",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:16:07",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:16:23",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        },
+        {
+          "timestamp": "2026-10-26 00:16:39",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM15. (Reset from 0 misses)"
+        }
+      ],
+      "completion_reason": "Manual end by student/lecturer"
+    },
+    {
+      "session_id": "ATT-1792659231-969937",
+      "student_id": "RA25TEST002",
+      "student_name": "Recovery Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:51",
+      "start_epoch": 1792659231.5338776,
+      "end_time": "2026-10-22 14:23:53",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:52",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:53",
+      "last_check_timestamp": 1792659233.5815887,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:51",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:52",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:53",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 1 misses)"
+        }
+      ],
+      "completion_reason": "Test cleanup"
+    },
+    {
+      "session_id": "ATT-1792659227-F4085E",
+      "student_id": "RA25TEST001",
+      "student_name": "Test Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:47",
+      "start_epoch": 1792659227.7068956,
+      "end_time": "2026-10-22 14:23:51",
+      "status": "ABSENT",
+      "consecutive_failures": 3,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:48",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        },
+        {
+          "warning_number": 2,
+          "timestamp": "2026-10-22 14:23:49",
+          "message": "Warning 2: Second consecutive Bluetooth failure. Return to classroom proximity immediately!"
+        },
+        {
+          "warning_number": 3,
+          "timestamp": "2026-10-22 14:23:50",
+          "message": "Penalty Applied: 3 consecutive Bluetooth check failures. Marked ABSENT."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:47",
+      "last_check_timestamp": 1792659230.7422674,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:47",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:48",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:49",
+          "success": false,
+          "detail": "Check failed (2/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:50",
+          "success": false,
+          "detail": "Check failed (3/3): ESP32 did not respond on COM14."
+        }
+      ],
+      "completion_reason": "Test cleanup"
+    },
+    {
+      "session_id": "ATT-1792659227-F4085E",
+      "student_id": "RA25TEST001",
+      "student_name": "Test Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:47",
+      "start_epoch": 1792659227.7068956,
+      "end_time": "2026-10-22 14:23:50",
+      "status": "ABSENT",
+      "consecutive_failures": 3,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:48",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        },
+        {
+          "warning_number": 2,
+          "timestamp": "2026-10-22 14:23:49",
+          "message": "Warning 2: Second consecutive Bluetooth failure. Return to classroom proximity immediately!"
+        },
+        {
+          "warning_number": 3,
+          "timestamp": "2026-10-22 14:23:50",
+          "message": "Penalty Applied: 3 consecutive Bluetooth check failures. Marked ABSENT."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:47",
+      "last_check_timestamp": 1792659230.7422674,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:47",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:48",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:49",
+          "success": false,
+          "detail": "Check failed (2/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:50",
+          "success": false,
+          "detail": "Check failed (3/3): ESP32 did not respond on COM14."
+        }
+      ]
+    },
+    {
+      "session_id": "ATT-1792659196-3965C9",
+      "student_id": "RA25TEST002",
+      "student_name": "Recovery Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:16",
+      "start_epoch": 1792659196.5708277,
+      "end_time": "2026-10-22 14:23:19",
+      "status": "PRESENT",
+      "consecutive_failures": 0,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:17",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:18",
+      "last_check_timestamp": 1792659198.613797,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:16",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:17",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:18",
+          "success": true,
+          "detail": "PONG received from ESP32 on COM14. (Reset from 1 misses)"
+        }
+      ],
+      "completion_reason": "Test cleanup"
+    },
+    {
+      "session_id": "ATT-1792659192-9AE31B",
+      "student_id": "RA25TEST001",
+      "student_name": "Test Student",
+      "department": "AIML",
+      "start_time": "2026-10-22 14:23:12",
+      "start_epoch": 1792659192.9374607,
+      "end_time": "2026-10-22 14:23:16",
+      "status": "PRESENT",
+      "consecutive_failures": 3,
+      "warnings": [
+        {
+          "warning_number": 1,
+          "timestamp": "2026-10-22 14:23:13",
+          "message": "Warning 1: ESP32 Bluetooth disconnected or unreachable."
+        },
+        {
+          "warning_number": 2,
+          "timestamp": "2026-10-22 14:23:14",
+          "message": "Warning 2: Second consecutive Bluetooth failure. Return to classroom proximity immediately!"
+        }
+      ],
+      "last_successful_heartbeat": "2026-10-22 14:23:12",
+      "last_check_timestamp": 1792659195.9733305,
+      "check_history": [
+        {
+          "timestamp": "2026-10-22 14:23:12",
+          "success": true,
+          "detail": "Session started & initial PONG verified."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:13",
+          "success": false,
+          "detail": "Check failed (1/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:14",
+          "success": false,
+          "detail": "Check failed (2/3): ESP32 did not respond on COM14."
+        },
+        {
+          "timestamp": "2026-10-22 14:23:15",
+          "success": false,
+          "detail": "Check failed (3/3): ESP32 did not respond on COM14."
+        }
+      ],
+      "completion_reason": "Test cleanup"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #070b14;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.8);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}
+
+/* Aurora & Mesh Background Effects */
+.bg-mesh-aurora {
+  background-color: #070b14;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.22) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.18) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(20, 184, 166, 0.18) 0px, transparent 50%);
+}
+
+/* Background Theme Variations */
+.theme-blueprint {
+  background-color: #060b17;
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(14, 165, 233, 0.22) 0px, transparent 55%),
+    radial-gradient(at 85% 15%, rgba(16, 185, 129, 0.20) 0px, transparent 50%),
+    radial-gradient(at 50% 85%, rgba(99, 102, 241, 0.20) 0px, transparent 55%);
+}
+
+.theme-nebula {
+  background-color: #090615;
+  background-image: 
+    radial-gradient(at 20% 10%, rgba(168, 85, 247, 0.28) 0px, transparent 55%),
+    radial-gradient(at 80% 25%, rgba(236, 72, 153, 0.22) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(99, 102, 241, 0.25) 0px, transparent 60%);
+}
+
+.theme-emerald {
+  background-color: #04100c;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(16, 185, 129, 0.30) 0px, transparent 55%),
+    radial-gradient(at 85% 15%, rgba(20, 184, 166, 0.25) 0px, transparent 50%),
+    radial-gradient(at 50% 90%, rgba(5, 150, 105, 0.22) 0px, transparent 60%);
+}
+
+.theme-cyber {
+  background-color: #030712;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(6, 182, 212, 0.25) 0px, transparent 50%),
+    radial-gradient(at 90% 20%, rgba(59, 130, 246, 0.25) 0px, transparent 50%),
+    radial-gradient(at 50% 90%, rgba(139, 92, 246, 0.22) 0px, transparent 60%);
+}
+
+/* Geometric Grid & Dot Matrix Textures */
+.bg-grid-overlay {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-dots-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 30%, transparent 20%, rgba(3, 7, 18, 0.75) 85%);
+}
+
+/* Glowing Aurora Orbs */
+.aurora-orb-1 {
+  animation: orbFloat1 18s ease-in-out infinite alternate;
+}
+
+.aurora-orb-2 {
+  animation: orbFloat2 22s ease-in-out infinite alternate;
+}
+
+.aurora-orb-3 {
+  animation: orbFloat3 15s ease-in-out infinite alternate;
+}
+
+@keyframes orbFloat1 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(60px, -40px) scale(1.15); }
+  100% { transform: translate(-40px, 30px) scale(0.95); }
+}
+
+@keyframes orbFloat2 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(-80px, 50px) scale(1.1); }
+  100% { transform: translate(50px, -30px) scale(1.05); }
+}
+
+@keyframes orbFloat3 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(40px, 60px) scale(1.2); }
+  100% { transform: translate(-60px, -50px) scale(0.9); }
+}
+
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(52, 211, 153, 0.3);
+  box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.15), 0 0 20px -5px rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+.glass-input {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: rgba(52, 211, 153, 0.6);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+/* Gradient Text Utilities */
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-violet {
+  background: linear-gradient(135deg, #a78bfa 0%, #818cf8 50%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #fbbf24 0%, #f97316 50%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #38bdf8 0%, #22d3ee 50%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pulsing radar pings */
+.radar-ping {
+  position: relative;
+}
+
+.radar-ping::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 9999px;
+  border: 2px solid currentColor;
+  opacity: 0.75;
+  animation: radarWave 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes radarWave {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Shimmer Border */
+.border-shimmer {
+  position: relative;
+}
+
+.border-shimmer::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, rgba(52, 211, 153, 0.5), rgba(99, 102, 241, 0.5), rgba(56, 189, 248, 0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Default print-only hidden state */
+.print-only {
+  display: none;
+}
+
+/* Print styles for OD Slip */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+

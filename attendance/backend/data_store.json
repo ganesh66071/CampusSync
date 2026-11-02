@@ -1,0 +1,68 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "registration_number": "RA2511026020082",
+      "name": "B.Ganesh",
+      "department": "AIML",
+      "year": "2nd Year",
+      "section": "Sec-B"
+    },
+    {
+      "id": 2,
+      "registration_number": "RA2511026020083",
+      "name": "Priya Sharma",
+      "department": "Computer Science",
+      "year": "3rd Year",
+      "section": "Sec-A"
+    },
+    {
+      "id": 3,
+      "registration_number": "RA2511026020084",
+      "name": "Rahul Verma",
+      "department": "Data Science",
+      "year": "2nd Year",
+      "section": "Sec-C"
+    },
+    {
+      "id": 4,
+      "registration_number": "RA2511026020085",
+      "name": "Ananya Patel",
+      "department": "Electronics & Comm.",
+      "year": "4th Year",
+      "section": "Sec-A"
+    },
+    {
+      "id": 5,
+      "registration_number": "RA2511026020001",
+      "name": "Arjun Kumar",
+      "department": "Information Technology",
+      "year": "1st Year",
+      "section": "Sec-A"
+    }
+  ],
+  "attendance_logs": [
+    {
+      "id": 2,
+      "registration_number": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "face_verified": 0,
+      "ble_connected": 0,
+      "beacon_id": "DISCONNECTED",
+      "status": "ABSENT",
+      "reason": "BLE_DISCONNECTED_2_CYCLES",
+      "timestamp": "2026-10-22T08:30:41.723Z"
+    },
+    {
+      "id": 1,
+      "registration_number": "RA2511026020082",
+      "student_name": "B.Ganesh",
+      "department": "AIML",
+      "face_verified": true,
+      "ble_connected": true,
+      "beacon_id": "Room_101_Beacon",
+      "timestamp": "2026-10-22T08:18:37.111Z"
+    }
+  ]
+}
